@@ -1,0 +1,707 @@
+[
+  {
+    "id": "bora1",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "¿Qué grupo de funcionarios públicos solía enfrentar los incendios en Chile antes de la fundación de los cuerpos de bomberos, limitándose a evacuar y cortar la propagación?",
+    "options": [
+      "Los serenos.",
+      "Los zapadores.",
+      "Los vigilantes municipales.",
+      "La guardia nacional."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "El manual indica que los zapadores eran funcionarios públicos que se limitaban a evacuar y cortar la propagación, sin preparación para enfrentar el fuego directamente."
+  },
+  {
+    "id": "bora2",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Medio",
+    "text": "Tras el incendio del 15 de diciembre de 1850 en Calle del Cabo, Valparaíso, la comunidad formó dos comisiones. ¿Cuál era el objetivo de la segunda comisión?",
+    "options": [
+      "Dar recomendaciones para evitar incendios futuros.",
+      "Organizar las futuras compañías de bomberos.",
+      "Recaudar fondos para reconstruir la Calle del Cabo.",
+      "Comprar la primera bomba hidráulica de la ciudad."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Tras el incendio, se formó una comisión para recomendaciones preventivas y otra para dar inicio a la formación de la organización de extinción."
+  },
+  {
+    "id": "bora3",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Difícil",
+    "text": "Si un voluntario ingresa a un cuerpo de bomberos fundado en 1856 en el sur de Chile, ¿a qué institución pertenece probablemente según los hitos históricos?",
+    "options": [
+      "Cuerpo de Bomberos de Valparaíso.",
+      "Cuerpo de Bomberos de Santiago.",
+      "Cuerpo de Bomberos de Ancud.",
+      "Cuerpo de Bomberos de Puerto Montt."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "El texto establece que el Cuerpo de Bomberos de Ancud se fundó el 12 de febrero de 1856."
+  },
+  {
+    "id": "bora4",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "¿Cuál fue la causa principal de la tragedia en la Iglesia de la Compañía de Jesús en 1863 que motivó la formación de bomberos en Santiago?",
+    "options": [
+      "La falta de agua en el sector.",
+      "Las puertas del templo que solo abrían hacia adentro.",
+      "La explosión de una bomba de vapor.",
+      "El uso de materiales ligeros en la construcción del techo."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "El pánico desató una estampida y las puertas bloqueaban la salida al abrirse hacia adentro.\n\n\n* **Incorrectas:** A, C y D) No se mencionan como factores determinantes de la pérdida masiva de vidas en ese evento específico según el manual.\n\n**5. (Caso) Un inmigrante liberal y masón a finales del siglo XIX decide unirse a una compañía en Valparaíso. Según la historia, ¿qué tipo de compañía buscaría probablemente para conservar su identidad?**\nA) Compañía de ganchos y escaleras.\nB) Compañía de colonia.\nC) Compañía de guardias de la propiedad.\nD) Compañía de agua centralizada.\n\n* \n**Correcta: B) Compañía de colonia.** Argumento: Los inmigrantes formaban compañías de colonia para compartir y conservar su identidad nacional y traer tradiciones de sus países."
+  },
+  {
+    "id": "bora6",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "Durante el siglo XX, ¿qué factor obligó a Bomberos a depender cada vez más de aportes externos para su subsistencia?",
+    "options": [
+      "El aumento de los salarios de los conductores de carros.",
+      "El ingreso de la clase media que carecía de los recursos de los aristócratas fundadores.",
+      "La prohibición de donaciones privadas por parte del Estado.",
+      "La baja cantidad de incendios que redujo el interés público."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Al cambiar la composición social a clase media y trabajadores, los cuerpos ya no podían autofinanciarse con aportes de sus miembros."
+  },
+  {
+    "id": "bora7",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Difícil",
+    "text": "Una zona periférica de una ciudad crece con viviendas de materiales ligeros y sin grifos. ¿Cómo afecta esto históricamente al servicio de bomberos?",
+    "options": [
+      "Reduce el riesgo de incendios al estar alejados del centro comercial.",
+      "Obliga a reubicar compañías o fundar nuevas para proteger áreas más extensas.",
+      "Facilita la extinción al haber más espacio libre entre casas.",
+      "Elimina la necesidad de material mayor especializado."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "El crecimiento periférico con materiales ligeros e insuficiencia de agua exige nuevos cuarteles y material adecuado."
+  },
+  {
+    "id": "bora8",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "¿Qué fecha se reconoce institucionalmente como la fundación de la Junta Nacional de Cuerpos de Bomberos de Chile?",
+    "options": [
+      "30 de junio de 1851.",
+      "19 de junio de 1968.",
+      "30 de junio de 1970.",
+      "30 de julio de 1962."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "La denominada Junta Coordinadora (hoy Junta Nacional) reconoce esa fecha como su fundación."
+  },
+  {
+    "id": "bora9",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "¿Cuál es la principal característica del bombero/a en Chile en comparación con otros países?",
+    "options": [
+      "Son parte de la policía nacional.",
+      "Son funcionarios públicos remunerados.",
+      "Son absolutamente voluntarios y provienen de todas las profesiones.",
+      "Es obligatorio realizar una carrera militar previa."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "En Chile los bomberos son voluntarios y su condición socioeconómica o profesión es indiferente."
+  },
+  {
+    "id": "bora10",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Difícil",
+    "text": "Ante un incendio forestal que amenaza viviendas, según la doctrina moderna: ¿Cuál es el rol exclusivo de Bomberos?",
+    "options": [
+      "Combatir el incendio en el corazón del bosque con medios aéreos.",
+      "Limitarse a la protección de viviendas en la interfaz urbano-forestal.",
+      "Dirigir todas las operaciones de la CONAF.",
+      "Evacuar a la fauna silvestre del sector afectado."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Bomberos no interviene en incendios forestales a menos que sea necesaria la protección de viviendas."
+  },
+  {
+    "id": "bora11",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "¿Cuál es la célula organizacional básica que da vida a los Cuerpos de Bomberos?",
+    "options": [
+      "La Comandancia.",
+      "La Compañía.",
+      "El Directorio General.",
+      "El Consejo Regional."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Las compañías son la célula básica que entrega el servicio a la comunidad."
+  },
+  {
+    "id": "bora12",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Medio",
+    "text": "En una compañía, el Director debe ausentarse por un mes. ¿Qué línea de mando debe encargarse de la gestión administrativa y representar a la compañía ante la institución?",
+    "options": [
+      "El Capitán.",
+      "El Secretario.",
+      "El Tesorero.",
+      "El Oficial que corresponda según el reglamento (línea administrativa)."
+    ],
+    "correctAnswerIndex": 3,
+    "explanation": "El Director tiene el mando administrativo; su subrogación debe seguir la misma línea administrativa."
+  },
+  {
+    "id": "bora13",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "¿Cuál de estos oficiales pertenece al mando operativo de una compañía?",
+    "options": [
+      "Secretario.",
+      "Tesorero.",
+      "Teniente 1°.",
+      "Intendente."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "El Capitán y los Tenientes componen el mando operativo."
+  },
+  {
+    "id": "bora14",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Medio",
+    "text": "Un bombero comete una falta disciplinaria leve dentro de su cuartel. ¿Cuál es el tribunal de primera instancia encargado de juzgarlo?",
+    "options": [
+      "Consejo Superior de Disciplina.",
+      "Directorio General.",
+      "Consejo de Disciplina de su compañía.",
+      "Asamblea Nacional."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Es el tribunal de primera instancia que sanciona faltas cometidas por integrantes de la compañía."
+  },
+  {
+    "id": "bora15",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "¿Qué diferencia al Superintendente del Comandante en la estructura de un Cuerpo de Bomberos?",
+    "options": [
+      "El Superintendente manda en los incendios y el Comandante en los desfiles.",
+      "El Superintendente tiene la gestión administrativa y el Comandante la operatividad en emergencias.",
+      "El Comandante es el representante legal y el Superintendente administra el material mayor.",
+      "No hay diferencia; ambos cargos pueden ser ejercidos por la misma persona simultáneamente."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "El mando administrativo recae en el Superintendente y el operativo en el Comandante."
+  },
+  {
+    "id": "bora16",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Difícil",
+    "text": "Si se requiere nombrar a un Inspector para que se haga cargo del departamento de Material Menor del Cuerpo, ¿qué mando tiene la facultad de nombrarlo?",
+    "options": [
+      "La Superintendencia.",
+      "La Comandancia.",
+      "El Consejo de Disciplina.",
+      "La Asamblea Nacional.\n\n* **Correcta: B) La Comandancia.** Argumento: Tanto superintendencia como comandancia pueden nombrar inspectores para el funcionamiento del servicio; Material Menor es un área operativa bajo el Comandante.\n\n\n* \n**Incorrectas:** A) Administra la organización general, no la operatividad directa de departamentos técnicos como material menor. C) Sanciona faltas, no nombra cargos operativos. D) Trata temas nacionales, no internos de un Cuerpo específico.\n\n\n\n**17. (Concepto) ¿Quiénes integran el Directorio General de un Cuerpo de Bomberos?**\nA) Solo el Superintendente y el Comandante.\nB) Todos los bomberos con más de 10 años de servicio.\nC) El Superintendente, Comandante, Oficiales Generales, Directores de Compañía y Directores Honorarios.\nD) Solo los Capitanes de todas las compañías."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "La composición incluye a los mencionados y otros cargos según el reglamento particular."
+  },
+  {
+    "id": "bora18",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "¿Cuál es el principio fundamental que otorga autoridad a los cargos en Bomberos de Chile?",
+    "options": [
+      "La designación directa del Ministerio del Interior.",
+      "La antigüedad absoluta en el servicio.",
+      "La democracia (elección por pares).",
+      "El aporte económico realizado a la compañía."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "La democracia es el origen de la autoridad; los cargos son elegidos por los propios pares."
+  },
+  {
+    "id": "bora19",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "¿Qué organismo es el encargado de coordinar la acción de los Cuerpos de Bomberos a nivel de una región administrativa?",
+    "options": [
+      "La Junta Nacional.",
+      "El Consejo Regional.",
+      "El Sistema Nacional de Operaciones.",
+      "La Comandancia Regional."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "En cada región administrativa hay un Consejo Regional conformado por los superintendentes de la zona."
+  },
+  {
+    "id": "bora20",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "¿Cuál de estos NO es un objetivo de la Junta Nacional de Cuerpos de Bomberos (JNCB)?",
+    "options": [
+      "Servir de enlace entre los Cuerpos de Bomberos.",
+      "Representar a la institución ante el Gobierno.",
+      "Mandar operativamente en los incendios de cada comuna.",
+      "Cooperar en la solución de problemas económicos de los Cuerpos."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "La JNCB coordina y sirve de enlace, pero no tiene mando operativo directo sobre incendios locales, el cual reside en cada Cuerpo."
+  },
+  {
+    "id": "bora21",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "¿Cuál es la finalidad del Manual de operaciones multiinstitucional ante emergencias (Manual ABC)?",
+    "options": [
+      "Enseñar a los bomberos a conducir ambulancias.",
+      "Coordinar el actuar de SAMU, Bomberos y Carabineros para atender a las víctimas.",
+      "Establecer un registro nacional de incendios forestales.",
+      "Definir los sueldos del personal de emergencia."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "El objetivo primordial es el resguardo y atención coordinada de los lesionados."
+  },
+  {
+    "id": "bora22",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Difícil",
+    "text": "En un rescate vehicular, un bombero libera a una persona atrapada mediante el uso de herramientas hidráulicas. Según el manual, este conjunto de acciones se denomina:",
+    "options": [
+      "Atención prehospitalaria.",
+      "Reanimación.",
+      "Extricación o rescate.",
+      "Traslado sanitario."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Se define como el conjunto de acciones destinadas a liberar a personas atrapadas en un vehículo o estructura."
+  },
+  {
+    "id": "bora23",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "¿Qué prioridad es la más alta para las tres instituciones (SAMU, Bomberos, Carabineros) en el escenario de un evento?",
+    "options": [
+      "La limpieza de la calzada.",
+      "La atención de los lesionados.",
+      "La investigación de las causas del siniestro.",
+      "El resguardo del material mayor."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "La atención de lesionados es la primera prioridad y los esfuerzos deben sumarse para ello."
+  },
+  {
+    "id": "bora24",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Difícil",
+    "text": "Si un bombero llega como primer respondedor a un derrame de un producto químico desconocido y su cuerpo no tiene la especialidad Hazmat, ¿qué debe hacer?",
+    "options": [
+      "Entrar inmediatamente a detener la fuga.",
+      "Limitarse a la identificación y reconocimiento usando la Guía de Respuesta a Emergencias (GRE).",
+      "Solicitar ayuda a la policía para que ellos sellen el contenedor.",
+      "Ignorar el derrame y retirarse por seguridad personal."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Los no especialistas deben limitar su actuación a identificar y reconocer con la GRE."
+  },
+  {
+    "id": "bora25",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "Según el Sistema de Gestión de Actos de Servicio (SGAS), ¿cuál es la emergencia de mayor ocurrencia para Bomberos en Chile?",
+    "options": [
+      "Incendios estructurales.",
+      "Accidentes vehiculares.",
+      "Incendios forestales.",
+      "Rescate subacuático."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "El SGAS indica que los accidentes vehiculares son las emergencias de mayor ocurrencia."
+  },
+  {
+    "id": "bora26",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Medio",
+    "text": "Al inspeccionar una edificación en construcción, ¿qué documento puede utilizar el inspector de bomberos para dejar constancia de sus observaciones?",
+    "options": [
+      "El acta de sesión de la compañía.",
+      "El libro de obras de la construcción.",
+      "El registro civil de la comuna.",
+      "No puede dejar constancia oficial, solo avisar verbalmente."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Los inspectores de bomberos deben dejar constancia de sus observaciones sobre seguridad contra incendio en el libro de obras."
+  },
+  {
+    "id": "bora27",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "¿Puede un Cuerpo de Bomberos cobrar por la recepción o revisión de un plan de evacuación de un edificio con carga superior a 100 personas?",
+    "options": [
+      "Sí, es un servicio remunerado según la Ley Marco.",
+      "No, esa labor debe ser ejercida en forma gratuita.",
+      "Solo si el edificio es de una empresa multinacional.",
+      "Solo si la inspección demora más de dos horas."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "La labor de inspección y recepción de planes es preventiva y debe ser gratuita."
+  },
+  {
+    "id": "bora28",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Difícil",
+    "text": "Un comandante detecta que un edificio con recepción municipal no cumple con su plan de evacuación. ¿A qué autoridad debe dar cuenta por escrito?",
+    "options": [
+      "Al Director de la ANB.",
+      "Al Director de Obras Municipales.",
+      "Al Superintendente de Electricidad y Combustibles.",
+      "Al Presidente de la Junta Nacional."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Se debe dar cuenta al Director de Obras Municipales para que se adopten las medidas y multas correspondientes."
+  },
+  {
+    "id": "bora29",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "¿Qué grupo de rescate acreditado internacionalmente posee Chile para actuar en colapsos estructurales graves?",
+    "options": [
+      "GERSA.",
+      "USAR BOCH.",
+      "Hazmat.",
+      "Sistema Nacional de Serenos."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Chile cuenta con el grupo de búsqueda y rescate USAR BOCH acreditado internacionalmente."
+  },
+  {
+    "id": "bora30",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Medio",
+    "text": "En un incendio estructural moderno de una casa con muebles de madera prensada y plásticos, ¿qué característica del fuego debe esperar el bombero?",
+    "options": [
+      "Desarrollo muy lento y temperaturas bajas.",
+      "Gran producción de brasas pero sin humo.",
+      "Desarrollo mucho más rápido y temperaturas altas en cortos periodos de tiempo.",
+      "Imposibilidad de propagación a casas colindantes."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Los materiales modernos (plásticos, pinturas, prensados) hacen que los incendios actuales sean más veloces y calientes que en el pasado."
+  },
+  {
+    "id": "bora31",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "¿Qué significa que Bomberos de Chile tenga una \"Autonomía responsable\"?",
+    "options": [
+      "Que puede ignorar las leyes del Estado si interfieren con el servicio.",
+      "Que es independiente del Estado pero debe responder por sus decisiones y administración de recursos.",
+      "Que el Estado no tiene derecho a supervisar sus cuentas bancarias.",
+      "Que cada bombero es autónomo para decidir si asiste o no a un llamado."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "La autonomía obliga a hacerse cargo de la calidad de respuesta, formación y recursos."
+  },
+  {
+    "id": "bora32",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Medio",
+    "text": "Un oficial electo termina su periodo de mando de un año. ¿Qué ocurre con su estatus jerárquico según la doctrina de \"Elección entre iguales\"?",
+    "options": [
+      "Mantiene el grado de por vida para ser respetado por los nuevos.",
+      "Vuelve a su estado normal sin cargo alguno y retoma sus obligaciones tradicionales.",
+      "Asciende automáticamente a Oficial General por su experiencia.",
+      "Puede designar a su sucesor sin votación."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "La autoridad es temporal; al terminar el periodo, el bombero vuelve a ser un igual entre iguales."
+  },
+  {
+    "id": "bora33",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "¿Qué es la \"lenidad\" en el contexto ético de un oficial?",
+    "options": [
+      "La excesiva rigidez al castigar faltas leves.",
+      "La blandura en exigir el cumplimiento de los deberes o en castigar las faltas.",
+      "La capacidad de delegar funciones administrativas en secretarios.",
+      "La rapidez para responder a las alarmas de incendio."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "La lenidad es una falta ética del oficial que no hace cumplir los reglamentos por ser \"blando\"."
+  },
+  {
+    "id": "bora34",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Difícil",
+    "text": "Un bombero recibe una reprimenda injusta por parte de un oficial. Según la disciplina, el bombero debe evitar la \"hiperestesia\". ¿Qué significa esto?",
+    "options": [
+      "Denunciar inmediatamente al oficial en redes sociales.",
+      "No irritarse o amargarse por situaciones que se sobreestiman por herir el orgullo.",
+      "Gritar más fuerte que el oficial para demostrar carácter.",
+      "Ignorar la orden del oficial por ser injusta."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "La hiperestesia es una hipersensibilidad que hace que la persona se amargue ante situaciones menores; la disciplina obliga a ser resiliente."
+  },
+  {
+    "id": "bora35",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "¿Cuál es la motivación básica y central que debe regir a todo bombero/a?",
+    "options": [
+      "La fama y el reconocimiento público.",
+      "La obtención de beneficios monetarios.",
+      "El servicio a la comunidad.",
+      "El poder político dentro del Cuerpo."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "El servicio es el principio-valor que rige la voluntad de Bomberos por sobre intereses individuales."
+  },
+  {
+    "id": "bora36",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Medio",
+    "text": "En la jerga bomberil, ¿cómo se debe tratar a un \"chupe\" o \"chiporro\" (bombero menos antiguo)?",
+    "options": [
+      "Como un mozo para que realice las tareas domésticas personales de los antiguos.",
+      "Con respeto y afecto, como un hermano menor de la cofradía al que se le enseña.",
+      "Ignorándolo hasta que cumpla un año de servicio.",
+      "Obligándolo a pagar todas las cuotas sociales de la compañía."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "El chupe no es un mozo; se le cuida, se le transfieren tradiciones y se le respeta."
+  },
+  {
+    "id": "bora37",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "¿Qué implica el principio de autoridad \"Colegiada\" en Bomberos?",
+    "options": [
+      "Que una sola persona toma todas las decisiones administrativas.",
+      "Que las decisiones se adoptan por una pluralidad de personas (consensos o mayorías) en directorios o consejos.",
+      "Que solo los bomberos con título universitario pueden mandar.",
+      "Que todas las órdenes de incendio deben ser votadas antes de ejecutarse."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "La autoridad colegiada permite deliberar y adoptar decisiones para el interés general."
+  },
+  {
+    "id": "bora38",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Difícil",
+    "text": "Al dirigirse a un oficial, un bombero antepone el adjetivo \"mi\" (ejemplo: \"Mi Capitán\"). ¿Qué significado tiene este gesto según el manual?",
+    "options": [
+      "Es una imposición reglamentaria obligatoria bajo pena de expulsión.",
+      "Es una deferencia voluntaria que reconoce que se está bajo su mando.",
+      "Indica que el capitán es propiedad personal del bombero.",
+      "Es un término que solo pueden usar los bomberos honorarios."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "El uso de \"mi\" es una deferencia y reconocimiento de la jerarquía, pero debe ser un gesto voluntario y no impuesto."
+  },
+  {
+    "id": "bora39",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "¿Cuál es el compromiso de disponibilidad que asume Bomberos con la sociedad?",
+    "options": [
+      "De lunes a viernes en horario de oficina.",
+      "Solo durante los meses de verano por riesgo de incendios forestales.",
+      "Las 24 horas del día, los 365 días del año.",
+      "Solo cuando el Estado decreta Alerta Roja."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "El compromiso implica entregar un servicio adecuado en calidad y oportunidad permanentemente."
+  },
+  {
+    "id": "bora40",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Medio",
+    "text": "Un bombero desea retirarse de la institución tras dos años de servicio. Según el manual, ¿es posible?",
+    "options": [
+      "No, una vez jurado debe quedarse de por vida o hasta los 65 años.",
+      "Sí, el retiro de la institución es voluntario, al igual que el ingreso.",
+      "Solo si paga una multa compensatoria al Cuerpo de Bomberos.",
+      "Solo si encuentra a un reemplazo que asuma sus cuotas."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "El ingreso y el retiro son actos voluntarios de la persona."
+  },
+  {
+    "id": "bora41",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "¿Cuál es la diferencia entre una formación y un desfile?",
+    "options": [
+      "En la formación se corre y en el desfile se camina.",
+      "La formación es la distribución de los integrantes (línea, columna); el desfile es el acto de marchar ante autoridades.",
+      "La formación es obligatoria y el desfile es solo para oficiales.",
+      "No hay diferencia, son sinónimos."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "La formación es la distribución espacial y el desfile es el acto ceremonial de marcha."
+  },
+  {
+    "id": "bora42",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Difícil",
+    "text": "El oficial a cargo dice: \"¡Giro... a la iz...!\". ¿Qué tipo de voz de mando es esta parte de la instrucción?",
+    "options": [
+      "Voz de atención.",
+      "Voz preventiva.",
+      "Voz ejecutiva.",
+      "Voz de descanso."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "La voz preventiva antecede a la ejecución y se da en forma alargada para preparar al personal."
+  },
+  {
+    "id": "bora43",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "Al estar en la posición \"Firme\", ¿qué ángulo deben formar las puntas de los pies?",
+    "options": [
+      "10 grados.",
+      "45 grados.",
+      "90 grados.",
+      "Deben estar paralelas."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Se deben juntar los talones y separar las puntas formando un ángulo de 45°."
+  },
+  {
+    "id": "bora44",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Difícil",
+    "text": "Se da la voz de mando \"¡A DISCRECIÓN!\". ¿Cuál es el movimiento correcto de los pies?",
+    "options": [
+      "Juntar los talones con fuerza.",
+      "Sacar el pie izquierdo al frente y golpear el suelo con toda la planta.",
+      "Separar ambos pies al mismo tiempo hacia los lados.",
+      "Cruzar el pie derecho por detrás del izquierdo."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Se saca el pie izquierdo al frente golpeando el suelo, dejando el talón izquierdo a la altura de la punta del derecho."
+  },
+  {
+    "id": "bora45",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "¿Sobre qué parte del pie se deben realizar todos los giros en la formación?",
+    "options": [
+      "Sobre la punta del pie derecho.",
+      "Sobre el taco (talón) del pie izquierdo.",
+      "Sobre ambos talones simultáneamente.",
+      "Sobre los metatarsos."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Todos los giros se realizan sobre el taco del pie izquierdo, manteniendo la pierna estirada."
+  },
+  {
+    "id": "bora46",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Difícil",
+    "text": "Al realizar una \"Media vuelta\", ¿cuántos grados debe girar el cuerpo y hacia qué lado?",
+    "options": [
+      "90 grados a la derecha.",
+      "180 grados a la izquierda.",
+      "180 grados a la derecha.",
+      "360 grados sobre el eje."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Se gira el cuerpo a la izquierda en 180° usando el talón izquierdo como eje."
+  },
+  {
+    "id": "bora47",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "¿Quiénes son los únicos autorizados para realizar el saludo con la \"mano en visera\"?",
+    "options": [
+      "Todos los bomberos que tengan su uniforme completo.",
+      "Solo los oficiales autorizados por su reglamentación.",
+      "Solo el estandarte.",
+      "El personal rentado."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "El saludo con mano en visera es exclusivo de oficiales autorizados; el resto saluda solo con la vista."
+  },
+  {
+    "id": "bora48",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Difícil",
+    "text": "Se ordena \"¡ALINE... AR!\". ¿Hacia qué lado debe llevar la vista la unidad como norma general?",
+    "options": [
+      "Hacia la izquierda.",
+      "Hacia la derecha.",
+      "Al frente, mirando al oficial.",
+      "Hacia arriba, saludando al pabellón."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "La alineación y el contacto se toman por la derecha, salvo orden contraria."
+  },
+  {
+    "id": "bora49",
+    "malla": "inicial",
+    "course": "ini-bora",
+    "difficulty": "Fácil",
+    "text": "¿Cuál es el objetivo principal de la \"numeración\" en una formación?",
+    "options": [
+      "Elegir quién irá en el primer carro de agua.",
+      "Comprobar la cantidad total de integrantes en la formación.",
+      "Definir el orden para el almuerzo en el cuartel.",
+      "Saber quién es el más antiguo de la fila."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "La numeración se realiza para comprobar la cantidad total o para ejercicios específicos."
+  }
+]
