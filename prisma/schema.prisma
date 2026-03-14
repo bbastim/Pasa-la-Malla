@@ -1,0 +1,67 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Course {
+  id            String     @id
+  malla         String
+  name          String
+  description   String
+  manualSummary String     @map("manual_summary")
+  questions     Question[]
+  createdAt     DateTime   @default(now()) @map("created_at")
+
+  @@map("courses")
+}
+
+model Question {
+  id                 String   @id
+  malla              String
+  courseId            String   @map("course_id")
+  course             Course   @relation(fields: [courseId], references: [id])
+  difficulty         String
+  text               String
+  options            Json
+  correctAnswerIndex Int      @map("correct_answer_index")
+  explanation        String
+  reports            Report[]
+  createdAt          DateTime @default(now()) @map("created_at")
+
+  @@map("questions")
+}
+
+model Badge {
+  id          String @id
+  name        String
+  description String
+  icon        String
+  color       String
+  bg          String
+  border      String
+
+  @@map("badges")
+}
+
+model Feedback {
+  id        Int      @id @default(autoincrement())
+  message   String
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("feedback")
+}
+
+model Report {
+  id           Int      @id @default(autoincrement())
+  questionId   String   @map("question_id")
+  question     Question @relation(fields: [questionId], references: [id])
+  questionText String   @map("question_text")
+  message      String
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  @@map("reports")
+}

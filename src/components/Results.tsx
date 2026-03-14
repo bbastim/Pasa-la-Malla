@@ -1,8 +1,7 @@
 import React, { memo } from 'react';
-import { Question } from '../types';
+import { Question, Badge } from '../types';
 import { RotateCcw, Home as HomeIcon, Timer, ArrowUpCircle, Award } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { BADGES } from '../lib/gamification';
 
 export interface SessionRewards {
   xp: number;
@@ -20,6 +19,7 @@ interface ResultsProps {
   onRestart: () => void;
   onHome: () => void;
   mode: 'entrenamiento' | 'examen';
+  badges: Badge[];
 }
 
 const QuestionReviewItem = memo(({ q, i, userAnswer }: { q: Question, i: number, userAnswer: number | undefined }) => {
@@ -72,7 +72,7 @@ const QuestionReviewItem = memo(({ q, i, userAnswer }: { q: Question, i: number,
   );
 });
 
-export function Results({ questions, answers, score, timeElapsed, rewards, onRestart, onHome, mode }: ResultsProps) {
+export function Results({ questions, answers, score, timeElapsed, rewards, onRestart, onHome, mode, badges }: ResultsProps) {
   const answeredCount = Object.keys(answers).length;
   const percentage = answeredCount > 0 ? Math.round((score / answeredCount) * 100) : 0;
   const passed = percentage >= 70; // 70% passing grade
@@ -127,7 +127,7 @@ export function Results({ questions, answers, score, timeElapsed, rewards, onRes
                   <p className="text-sm text-zinc-400">Nuevas insignias desbloqueadas:</p>
                   <div className="flex flex-wrap justify-center gap-3">
                     {rewards.newBadges.map(badgeId => {
-                      const badge = BADGES.find(b => b.id === badgeId);
+                      const badge = badges.find(b => b.id === badgeId);
                       if (!badge) return null;
                       return (
                         <div key={badge.id} className={`flex items-center gap-2 px-3 py-1.5 rounded-lg border ${badge.bg} ${badge.border} ${badge.color}`}>
