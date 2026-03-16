@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { Home } from './components/Home';
 import { CourseList } from './components/CourseList';
 import { Quiz } from './components/Quiz';
@@ -8,10 +8,10 @@ import { FeedbackModal } from './components/FeedbackModal';
 import { AdminLoginModal } from './components/AdminLoginModal';
 import { Chatbot } from './components/Chatbot';
 import { ProfileModal } from './components/ProfileModal';
-import { MallaType, Question, UserStats } from './types';
-import { questions as allQuestions } from './data/questions';
+import { MallaType, Question, UserStats, Badge } from './types';
 import { HelpCircle, ShieldAlert } from 'lucide-react';
 import { getInitialStats, saveStats, calculateLevel } from './lib/gamification';
+import { getCourseQuestions, getBadges } from './services/api';
 
 type AppState = 'home' | 'courses' | 'quiz' | 'results' | 'admin';
 
@@ -33,26 +33,32 @@ export default function App() {
 
   const [userStats, setUserStats] = useState<UserStats>(getInitialStats());
   const [sessionRewards, setSessionRewards] = useState<SessionRewards | null>(null);
+  const [badges, setBadges] = useState<Badge[]>([]);
+
+  useEffect(() => {
+    getBadges().then(setBadges).catch(console.error);
+  }, []);
 
   const handleSelectMalla = useCallback((malla: MallaType) => {
     setSelectedMalla(malla);
     setAppState('courses');
   }, []);
 
-  const handleSelectCourseMode = useCallback((courseId: string, mode: 'entrenamiento' | 'examen') => {
+  const handleSelectCourseMode = useCallback(async (courseId: string, mode: 'entrenamiento' | 'examen') => {
     setSelectedCourseId(courseId);
     setQuizMode(mode);
     
-    // Filter questions by course
-    const courseQuestions = allQuestions.filter(q => q.course === courseId);
-    
-    // Shuffle and select questions based on mode
-    const shuffled = [...courseQuestions].sort(() => 0.5 - Math.random());
-    const numQuestions = mode === 'examen' ? Math.min(20, shuffled.length) : shuffled.length;
-    const selected = shuffled.slice(0, numQuestions);
-    
-    setQuizQuestions(selected);
-    setAppState('quiz');
+    try {
+      const courseQuestions = await getCourseQuestions(courseId);
+      const shuffled = [...courseQuestions].sort(() => 0.5 - Math.random());
+      const numQuestions = mode === 'examen' ? Math.min(20, shuffled.length) : shuffled.length;
+      const selected = shuffled.slice(0, numQuestions);
+      
+      setQuizQuestions(selected);
+      setAppState('quiz');
+    } catch (error) {
+      console.error('Failed to load questions:', error);
+    }
   }, []);
 
   const handleFinishQuiz = useCallback((finalScore: number, finalAnswers: Record<string, number>, finalTime: number) => {
@@ -66,7 +72,6 @@ export default function App() {
     let leveledUp = false;
 
     if (quizMode === 'examen') {
-      // Gamification Logic for Examen
       const isPerfect = finalScore === quizQuestions.length;
       const isPassed = (finalScore / quizQuestions.length) >= 0.7;
       
@@ -110,7 +115,6 @@ export default function App() {
         if (selectedMalla === 'especialidades') checkBadge('master_especialidades', true);
       }
     } else {
-      // Modo entrenamiento: Solo suma tiempo y cantidad de preguntas respondidas
       newStats.totalTimeSpent += finalTime;
       newStats.totalQuestionsAnswered += Object.keys(finalAnswers).length;
     }
@@ -183,13 +187,13 @@ export default function App() {
           onRestart={handleRestart}
           onHome={handleHome}
           mode={quizMode}
+          badges={badges}
         />
       )}
       {appState === 'admin' && (
         <Admin onBack={() => setAppState('home')} />
       )}
 
-      {/* Global Feedback Button */}
       {appState === 'home' && (
         <button
           onClick={() => setShowFeedback(true)}
@@ -203,7 +207,6 @@ export default function App() {
         </button>
       )}
 
-      {/* Hidden Admin Button (Double click to enter admin mode) */}
       {appState === 'home' && (
         <button
           onDoubleClick={() => setShowAdminLogin(true)}
@@ -230,7 +233,7 @@ export default function App() {
       )}
 
       {showProfile && (
-        <ProfileModal stats={userStats} onClose={() => setShowProfile(false)} />
+        <ProfileModal stats={userStats} badges={badges} onClose={() => setShowProfile(false)} />
       )}
     </>
   );

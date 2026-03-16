@@ -1,16 +1,16 @@
-import React from 'react';
 import { X, Flame, Target, Award, Zap, Shield, ShieldAlert, Star, Medal, Trophy, Clock, Timer, Zap as FastIcon } from 'lucide-react';
-import { UserStats } from '../types';
-import { BADGES, calculateNextLevelXp, calculateCurrentLevelXp } from '../lib/gamification';
+import { UserStats, Badge } from '../types';
+import { calculateNextLevelXp, calculateCurrentLevelXp } from '../lib/gamification';
 
 const iconMap: Record<string, any> = { Flame, Target, Award, Zap, Shield, ShieldAlert, Star, Medal };
 
 interface ProfileModalProps {
   stats: UserStats;
+  badges: Badge[];
   onClose: () => void;
 }
 
-export function ProfileModal({ stats, onClose }: ProfileModalProps) {
+export function ProfileModal({ stats, badges, onClose }: ProfileModalProps) {
   const nextLevelXp = calculateNextLevelXp(stats.level);
   const currentLevelBaseXp = calculateCurrentLevelXp(stats.level);
   const progress = Math.max(0, Math.min(100, ((stats.xp - currentLevelBaseXp) / (nextLevelXp - currentLevelBaseXp)) * 100));
@@ -106,10 +106,10 @@ export function ProfileModal({ stats, onClose }: ProfileModalProps) {
           <div>
             <h4 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
               <Award className="w-5 h-5 text-zinc-400" />
-              Insignias ({stats.earnedBadges.length}/{BADGES.length})
+              Insignias ({stats.earnedBadges.length}/{badges.length})
             </h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {BADGES.map(badge => {
+              {badges.map(badge => {
                 const earned = stats.earnedBadges.includes(badge.id);
                 const Icon = iconMap[badge.icon] || Award;
                 

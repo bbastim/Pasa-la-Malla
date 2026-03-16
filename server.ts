@@ -1,24 +1,11 @@
+import "dotenv/config";
 import express from "express";
 import { createServer as createViteServer } from "vite";
-import Database from "better-sqlite3";
+import { PrismaPg } from "@prisma/adapter-pg";
+import { PrismaClient } from "./src/generated/prisma/client";
 
-const db = new Database("app.db");
-
-// Create tables for feedback and reports
-db.exec(`
-  CREATE TABLE IF NOT EXISTS feedback (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    message TEXT NOT NULL,
-    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-  );
-  CREATE TABLE IF NOT EXISTS reports (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    question_id TEXT NOT NULL,
-    question_text TEXT NOT NULL,
-    message TEXT NOT NULL,
-    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-  );
-`);
+const adapter = new PrismaPg({ connectionString: process.env.DATABASE_URL! });
+const prisma = new PrismaClient({ adapter });
 
 async function startServer() {
   const app = express();
@@ -26,44 +13,118 @@ async function startServer() {
 
   app.use(express.json());
 
-  // API Routes
-  app.post("/api/feedback", (req, res) => {
+  // --- API: Courses ---
+
+  app.get("/api/courses", async (req, res) => {
+    try {
+      const { malla } = req.query;
+      const where = malla ? { malla: String(malla) } : {};
+      const courses = await prisma.course.findMany({
+        where,
+        orderBy: { name: "asc" },
+      });
+      res.json(courses);
+    } catch (error) {
+      res.status(500).json({ error: "Database error" });
+    }
+  });
+
+  app.get("/api/courses/:id", async (req, res) => {
+    try {
+      const course = await prisma.course.findUnique({
+        where: { id: req.params.id },
+      });
+      if (!course) return res.status(404).json({ error: "Course not found" });
+      res.json(course);
+    } catch (error) {
+      res.status(500).json({ error: "Database error" });
+    }
+  });
+
+  app.get("/api/courses/:id/questions", async (req, res) => {
+    try {
+      const questions = await prisma.question.findMany({
+        where: { courseId: req.params.id },
+      });
+      const mapped = questions.map((q) => ({
+        id: q.id,
+        malla: q.malla,
+        course: q.courseId,
+        difficulty: q.difficulty,
+        text: q.text,
+        options: q.options as string[],
+        correctAnswerIndex: q.correctAnswerIndex,
+        explanation: q.explanation,
+      }));
+      res.json(mapped);
+    } catch (error) {
+      res.status(500).json({ error: "Database error" });
+    }
+  });
+
+  // --- API: Badges ---
+
+  app.get("/api/badges", async (_req, res) => {
+    try {
+      const badges = await prisma.badge.findMany();
+      res.json(badges);
+    } catch (error) {
+      res.status(500).json({ error: "Database error" });
+    }
+  });
+
+  // --- API: Feedback ---
+
+  app.post("/api/feedback", async (req, res) => {
     const { message } = req.body;
     if (!message) return res.status(400).json({ error: "Message is required" });
-    
+
     try {
-      const stmt = db.prepare("INSERT INTO feedback (message) VALUES (?)");
-      stmt.run(message);
+      await prisma.feedback.create({ data: { message } });
       res.json({ success: true });
     } catch (error) {
       res.status(500).json({ error: "Database error" });
     }
   });
 
-  app.post("/api/reports", (req, res) => {
+  // --- API: Reports ---
+
+  app.post("/api/reports", async (req, res) => {
     const { questionId, questionText, message } = req.body;
     if (!message) return res.status(400).json({ error: "Message is required" });
-    
+
     try {
-      const stmt = db.prepare("INSERT INTO reports (question_id, question_text, message) VALUES (?, ?, ?)");
-      stmt.run(questionId, questionText, message);
+      await prisma.report.create({
+        data: {
+          questionId: questionId || "unknown",
+          questionText: questionText || "",
+          message,
+        },
+      });
       res.json({ success: true });
     } catch (error) {
       res.status(500).json({ error: "Database error" });
     }
   });
 
-  app.get("/api/admin/messages", (req, res) => {
+  // --- API: Admin ---
+
+  app.get("/api/admin/messages", async (_req, res) => {
     try {
-      const feedback = db.prepare("SELECT * FROM feedback ORDER BY created_at DESC").all();
-      const reports = db.prepare("SELECT * FROM reports ORDER BY created_at DESC").all();
+      const feedback = await prisma.feedback.findMany({
+        orderBy: { createdAt: "desc" },
+      });
+      const reports = await prisma.report.findMany({
+        orderBy: { createdAt: "desc" },
+      });
       res.json({ feedback, reports });
     } catch (error) {
       res.status(500).json({ error: "Database error" });
     }
   });
 
-  // Vite middleware setup
+  // --- Vite middleware ---
+
   if (process.env.NODE_ENV !== "production") {
     const vite = await createViteServer({
       server: { middlewareMode: true },
